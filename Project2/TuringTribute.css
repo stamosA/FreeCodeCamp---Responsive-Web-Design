@@ -1,0 +1,89 @@
+*{
+  margin:0;
+  padding:0;
+}
+h1{
+  padding: 15px;
+  font-family: Arial;
+}
+h3
+{
+  font-size:20px;
+  background-color: orange;
+  margin:10px;
+  padding:10px;
+  border-radius: 10px;
+  color:white;
+}
+body
+{
+  background-color: #03050f;
+  color:white;
+  font-family:sans-serif;
+  text-align:center;
+}
+.img-container
+{
+  margin:auto;
+  padding:30px;
+  background-color:darkblue;
+}
+
+.turing-image
+{
+  max-width: 100%;
+  height: auto;
+  display:block;
+  margin: auto;
+  object-fit:contain;
+  border-radius:10px;
+
+
+}
+
+.caption
+{
+  padding-top:10px;
+ }
+
+.life
+{
+  padding: 30px 70px;
+  max-width:600px;
+  margin: 10px auto;
+  text-align:left;
+}
+
+.life-header
+{
+  text-align:center
+  padding: 20px;
+margin:10px auto;               font-size:20px;
+font-family:Arial;
+}
+
+.bold
+{
+  font-weight:bold;
+}
+
+li
+{
+  margin:20px;
+}
+
+.quote
+{
+  margin:30px 30px 5px;
+  font-family: italic;
+}
+
+.quote-author
+{
+  text-indent: 30px;
+}
+
+#tribute-link
+{
+  color:green;
+}
