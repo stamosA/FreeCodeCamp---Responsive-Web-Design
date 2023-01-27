@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Technical Documentation Page</title>
+    <link href="styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale 1.0">
+  </head>
+  <body>    
+    <nav id="navbar">
+        <header>Cybersecurity Documentation</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Ethical_Hacking">Ethical Hacking</a>
+        <a class="nav-link" href="#Networking">Networking</a>
+        <a class="nav-link" href="#Digital_Forensics">Digital Forensics</a>
+        <a class="nav-link" href="#Penetration_Testing">Penetration Testing</a>
+        <a class="nav-link" href="#SQL_injections">SQL injections</a>
+      </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>What is Cyber Security? Cyber Security is a process that's designed to protect networks and devices from external threats. </p>
+        <p>Businesses typically employ Cyber Security professionals to protect their confidential information, maintain employee productivity, and enhance customer confidence in products and services.</p>
+        <ol>
+          <li>Careers in cybersecurity</li>
+          <li>Offensive Security</li>
+          <li>Defensive Security</li>
+          </ol>
+      </section>
+      <section class="main-section" id="Ethical_Hacking">
+        <header>Ethical Hacking</header>
+        <p>Definition:
+          Ethical hacking involves an authorized attempt to gain unauthorized access to a computer system, application, or data. Carrying out an ethical hack involves duplicating strategies and actions of malicious attackers. This practice helps to identify security vulnerabilities which can then be resolved before a malicious attacker has the opportunity to exploit them.
+        </p>
+        <p>An ethical hacker reports the identified vulnerabilities to the organization. Additionally, they provide remediation advice. In many cases, with the organization’s consent, the ethical hacker performs a re-test to ensure the vulnerabilities are fully resolved. </p>
+       <pre> <code># host to listen on
+host = "192.168.0.187"
+
+# subnet to target
+tgt_subnet = "192.168.0.0/24"
+
+# magic we'll check ICMP responses for
+tgt_message = "PYTHONRULES!"
+</code></pre>
+       <pre> <code>def udp_sender(sub_net, magic_message):
+    sender = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+    for ip in ip_network(sub_net).hosts():
+        sender.sendto(magic_message.encode('utf-8'), (str(ip), 65212))
+
+</code></pre>
+      </section>
+      <section class="main-section" id="Networking">
+        <header>Networking</header>
+        <p>Network Security involves access control, virus and antivirus software, application security, network analytics, types of network-related security (endpoint, web, wireless), firewalls, VPN encryption and more.</p>
+        <p>If you currently work in networking, software development, systems engineering, financial and risk analysis, security intelligence or IT support, you’re in luck! CyberSeek has outlined cybersecurity career pathways that begin with these roles. Each pathway includes salary and job data. Read on to discover how your computer networking skills can help you prepare for a cybersecurity career.</p>
+        <ul>
+          <li>HTTP</li>
+          <li>TCP/IP</li>
+          <li>HSTS</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Digital_Forensics">
+        <header>Digital Forensics</header>
+        <p>Digital forensics is a branch of forensic science that focuses on identifying, acquiring, processing, analysing, and reporting on data stored electronically.</p>
+        <p>Electronic evidence is a component of almost all criminal activities and digital forensics support is crucial for law enforcement investigations.</p>
+      </section>
+      <section class="main-section" id="Penetration_Testing">
+        <header>Penetration Testing</header>
+        <pA penetration test, also known as a pen test, is a simulated cyber attack against your computer system to check for exploitable vulnerabilities. In the context of web application security, penetration testing is commonly used to augment a web application firewall (WAF).></p>
+        <p>Pen testing can involve the attempted breaching of any number of application systems, (e.g., application protocol interfaces (APIs), frontend/backend servers) to uncover vulnerabilities, such as unsanitized inputs that are susceptible to code injection attacks.</p>
+       <pre> <code>function check_port() {
+  if [ "$port" -gt 0 ] 2>/dev/null ;then
+    echo "port $port is number."
+    else
+      echo "port format error! the setting will be wrong."
+  fi	</code></pre>
+       <pre> <code>function set_proxy(){
+:!
+	read  -p  "Please enter IP: "  ip
+	check_ip $IP
+	read  -p  "Please enter port: "  port
+	check_ip $port
+!
+	echo "Please enter IP:PORT, example as 134.175.228.161:50000"
+	echo "IF the format is error as well as the setting will be wrong too."</code> </pre>
+      </section>
+      <section class="main-section" id="SQL_injections">
+        <header>SQL injections</header>
+        <p>SQL injection is a code injection technique that might destroy your database.</p>
+        <p>SQL injection usually occurs when you ask a user for input, like their username/userid, and instead of a name/id, the user gives you an SQL statement that you will unknowingly run on your database.</p>
+        <pre><code>SELECT * FROM Users WHERE UserId = 105 OR 1=1;</code></pre>
+      </section>
+    <footer>
+      <p>Documentation About Cybersecurity on the fly by <a href="https://github.com/stamosA">Andreas Stamos</a></p>
+    </footer>
+    </main>
+  </body>
+</html>
